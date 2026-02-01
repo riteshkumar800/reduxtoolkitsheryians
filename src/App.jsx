@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
+import {increment, decrement, incrementByAmount } from './redux/features/counterSlice'
 
 
 const App = () => {
@@ -15,6 +16,8 @@ const App = () => {
 
   return (
     <div>
+      <h1>{count}</h1>
+      <button></button>
       
     </div>
   )
