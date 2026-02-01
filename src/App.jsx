@@ -29,6 +29,19 @@ const App = () => {
         Decrement
       </button>
 
+      <input type="Number"
+      value={num}
+      onChange={(e)=>{
+        setNum(e.target.value)
+      }}
+       />
+
+       <button onClick={()=>{
+        dispatch(incrementByAmount(Number(num)))
+       }}>
+        Increment By Amount
+       </button>
+
       
     </div>
   )
